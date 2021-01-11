@@ -19,3 +19,4 @@ endfunction
 set reggie_grades to 4, 4, 3, 4
 set reggie_gpa to call calculate_gpa with reggie_grades
 print reggie_gpa
+
