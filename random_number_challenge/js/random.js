@@ -8,17 +8,17 @@ const userLowNumber = prompt('Type in any low number.')
 const userHighNumber = prompt('Type in any high number');
 
 
-// Convert the user's string input to a numeric value
+// Convert the user's string inputs to numeric values
 const userLowNumeric = ( +userLowNumber );
 const userHighNumeric = ( +userHighNumber );
 
 // Conditional statement to check for validity of number
-if (userHighNumber) {
-    // Generate a random number using user input and Math.random method (add 1 to ensure result is at least 1)
-    const randomNumber = Math.floor((highNumber - lowNumber) * Math.random() + 1) + lowNumber;
+if (userLowNumeric && userHighNumeric) {
+    // Generate a random number using user input and Math.random method, between users low and high inputs, based on subtracting and adding low and high numerics
+    const randomNumber = Math.floor( Math.random() * (userHighNumeric - userLowNumeric + 1) ) + userLowNumeric;
 
-    // Log message listing the random number between 1 and the user's input number
-    console.log(`${randomNumber} is a random number between ${userLowNumber} and ${userNumeric} `);
+    // Log message listing the random number between user's low input and high input numbers
+    console.log(`${randomNumber} is a random number between ${userLowNumeric} and ${userHighNumeric} `);
 } else {
-    console.log(`You need to provide a number. Try again.`);
+    console.log(`You need to provide two numbers. Try again.`);
 }
