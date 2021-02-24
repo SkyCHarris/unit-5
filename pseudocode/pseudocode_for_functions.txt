@@ -24,3 +24,5 @@ print reggie_gpa
 
 -Add links to Audio Issues Spreadsheet
 -Reorganize videos to be under the right tabs
+
+What's the difference between pronunciation and enunciation?
