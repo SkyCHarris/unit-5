@@ -6,20 +6,18 @@ let green;
 let blue;
 let randomRGB;
 
-const main = document.querySelector('main');
+let randomColor;
 
 
-
-
-
+function getRandomColor (red, blue, green) {
+    randomColor = Math.floor(Math.random() * 256);
+}
 
 // For Loop
 for (let i = 1; i <= 10; i++) {
-    red = Math.floor(Math.random() * 256);
-    green = Math.floor(Math.random() * 256);
-    blue = Math.floor(Math.random() * 256);
+    randomColor.getRandomColor.(red, blue, green);
     randomRGB = `rgb( ${red}, ${green}, ${blue} )`;
     html += `<div style="background-color: ${randomRGB}">${i}</div>`;
 }
 
-main.innerHTML = html;
+document.querySelector('main').innerHTML = html;
