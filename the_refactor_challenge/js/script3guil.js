@@ -10,7 +10,7 @@ for ( let i = 1; i <= 10; i++ ) {
     green = randomValue();
     blue = randomValue();
     randomRGB = `rgb( ${red}, ${green}, ${blue} )`;
-    html += <div style="background-color: ${randomRGB}">${i}</div>;
+    html += `<div style="background-color: ${randomRGB}">${i}</div>`;
 }
 
 document.querySelector('main').innerHTML = html;
