@@ -9,14 +9,17 @@ let randomRGB;
 let randomColor;
 
 
-function getRandomColor (red, blue, green) {
-    randomColor = Math.floor(Math.random() * 256);
+function getRandomColor() {
+    const randomColor = Math.floor(Math.random() * 256);
+    return randomColor;
 }
 
-// For Loop
+console.log(getRandomColor());
+
+// // For Loop
 for (let i = 1; i <= 10; i++) {
-    randomColor.getRandomColor.(red, blue, green);
-    randomRGB = `rgb( ${red}, ${green}, ${blue} )`;
+    getRandomColor();
+    randomRGB = `rgb( ${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()} )`;
     html += `<div style="background-color: ${randomRGB}">${i}</div>`;
 }
 
